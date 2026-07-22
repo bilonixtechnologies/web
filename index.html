@@ -22,12 +22,12 @@
 </h2>
 
 
-<div class="menu-icon">
-☰
+<div class="menu-icon" onclick="toggleMenu()">
+    ☰
 </div>
 
 
-<ul class="nav-links">
+<ul class="nav-links" id="navLinks">
 
 <li><a href="#home">Home</a></li>
 <li><a href="#services">Services</a></li>
@@ -337,7 +337,14 @@ for the future.
 
 
 <script src="script.js"></script>
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
+</body>
+</html>
 </body>
 
 </html>
