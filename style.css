@@ -532,3 +532,40 @@ background-position:50px 50px;
 }
 
     }
+    .logo span{
+
+color:white;
+
+}
+
+
+.logo{
+
+font-weight:800;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+position:relative;
+
+}
+
+
+.logo::after{
+
+content:"";
+
+display:block;
+
+width:40px;
+
+height:3px;
+
+background:#00aaff;
+
+margin-top:5px;
+
+box-shadow:0 0 15px #00aaff;
+
+    }
