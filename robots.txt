@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://bilonixtechnologies.github.io/Bilonix-website/sitemap.xml
