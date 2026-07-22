@@ -92,7 +92,11 @@ nav a:hover{
     display:flex;
     align-items:center;
     justify-content:center;
+background-image:
+linear-gradient(rgba(0,170,255,0.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,170,255,0.08) 1px, transparent 1px);
 
+background-size:50px 50px;
     text-align:center;
 
     padding:120px 20px;
