@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background:#020617;
+    background:#000000;
     color:white;
     overflow-x:hidden;
 }
@@ -30,13 +30,11 @@ header{
 
 
 .logo span{
+    color:#FFD700;
 
-color:#00aaff;
-
-text-shadow:
-0 0 10px #00aaff,
-0 0 25px #00aaff;
-
+    text-shadow:
+    0 0 10px #FFD700,
+    0 0 25px #FFD700;
 }
 
 nav{
@@ -71,9 +69,7 @@ nav a{
 
 
 nav a:hover{
-
-    color:#00aaff;
-
+    color:#FFD700;
 }
 
 
@@ -88,18 +84,13 @@ nav a:hover{
     align-items:center;
     justify-content:center;
 background-image:
-linear-gradient(rgba(0,170,255,0.08) 1px, transparent 1px),
-linear-gradient(90deg, rgba(0,170,255,0.08) 1px, transparent 1px);
+linear-gradient(rgba(255,215,0,0.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,215,0,0.08) 1px, transparent 1px);
 
-background-size:50px 50px;
-    text-align:center;
-
-    padding:120px 20px;
-
-    background:
-    radial-gradient(circle at top,#0066ff55,transparent 35%),
-    radial-gradient(circle at bottom,#00aaff33,transparent 30%),
-    #020617;
+background:
+radial-gradient(circle at top,#FFD70033,transparent 35%),
+radial-gradient(circle at bottom,#FFD70022,transparent 30%),
+#000000;
 
 }
 
