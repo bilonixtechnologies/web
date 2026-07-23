@@ -70,21 +70,18 @@ nav a:hover{
 /* Hero */
 
 .hero{
-
+    position:relative;
     min-height:100vh;
-
     display:flex;
-    align-items:center;
     justify-content:center;
-background-image:
-linear-gradient(rgba(255,215,0,0.08) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,215,0,0.08) 1px, transparent 1px);
-
-background:
-radial-gradient(circle at top,#FFD70033,transparent 35%),
-radial-gradient(circle at bottom,#FFD70022,transparent 30%),
-#000000;
-
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at top,#FFD70022,transparent 30%),
+        radial-gradient(circle at bottom right,#FFD70011,transparent 35%),
+        #000;
 }
 
 
@@ -93,9 +90,9 @@ radial-gradient(circle at bottom,#FFD70022,transparent 30%),
     font-size:72px;
     font-weight:800;
     line-height:1.1;
-    margin-bottom:20px;
+    max-width:900px;
+    margin:auto;
 }
-
 
 .hero span{
     color:#FFD700;
@@ -134,10 +131,10 @@ button{
 
 
 button:hover{
-    transform:translateY(-5px) scale(1.05);
+    transform:translateY(-6px) scale(1.05);
     box-shadow:
         0 0 25px #FFD700,
-        0 0 60px rgba(255,215,0,.5);
+        0 0 60px rgba(255,215,0,.45);
 }
 
 
@@ -571,3 +568,18 @@ display:flex;
     position:relative;
     z-index:9999;
     }
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
