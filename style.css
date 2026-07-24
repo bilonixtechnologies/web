@@ -21,15 +21,14 @@ header{
     top:0;
     left:0;
     width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
     z-index:1000;
-
-    background:
-    radial-gradient(circle at top left, rgba(0,0,0,0.25);, transparent 40%),
-    radial-gradient(circle at bottom right, rgba(0,0,0,0.25); transparent 35%),
-    linear-gradient(135deg,#020202,#0a0a0a,#121212);
-
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
 }
 
 nav{
@@ -43,8 +42,8 @@ nav{
 }
 
 .logo{
-    font-size:30px;
-    font-weight:900;
+    font-size:32px;
+    font-weight:700;
     color:#FFD700;
     text-decoration:none;
 }
@@ -57,7 +56,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#ffffff;
+    text-shadow:0 0 10px #FFD700;
 }
 
 .logo{
