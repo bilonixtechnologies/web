@@ -43,17 +43,21 @@ nav{
 }
 
 .logo{
+    font-size:30px;
+    font-weight:900;
     color:#FFD700;
+    text-decoration:none;
 }
 
 nav a{
-    color:#fff;
+    color:#FFD700;
     text-decoration:none;
     font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#FFD700;
+    color:#ffffff;
 }
 
 .logo{
