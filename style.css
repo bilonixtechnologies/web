@@ -24,12 +24,12 @@ header{
     z-index:1000;
 
     background:
-    radial-gradient(circle at top left, rgba(255,215,0,0.18), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(255,170,0,0.12), transparent 35%),
+    radial-gradient(circle at top left, rgba(0,0,0,0.25);, transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,0.25); transparent 35%),
     linear-gradient(135deg,#020202,#0a0a0a,#121212);
 
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
 }
 
 nav{
@@ -124,7 +124,7 @@ nav a:hover{
 
 
 .hero p{
-    color:#ccc;
+    color:#eeeeee;
     font-size:18px;
     margin-bottom:40px;
 }
