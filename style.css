@@ -7,8 +7,11 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#050505;
-    color:white;
+    background:
+    radial-gradient(circle at top left, rgba(255,215,0,0.18), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,170,0,0.12), transparent 35%),
+    linear-gradient(135deg,#020202,#0a0a0a,#121212);
+    color:#fff;
     line-height:1.6;
 }
 
@@ -17,8 +20,10 @@ header{
     position:fixed;
     top:0;
     width:100%;
-    background:transparent;
-    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,215,0,0.12);
     z-index:1000;
 }
 
@@ -201,17 +206,18 @@ section{
 
 
 .card{
-    background:#111;
-    padding:35px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,215,0,0.2);
     border-radius:25px;
-    border:1px solid rgba(255,215,0,.15);
+    padding:35px;
     transition:.4s;
 }
 
-
 .card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 0 30px rgba(255,215,0,.3);
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,215,0,.35);
 }
 
 
