@@ -44,3 +44,8 @@ window.addEventListener("scroll", () => {
         header.style.background = "rgba(8,17,31,.95)";
     }
 });
+// Mobile menu toggle
+function toggleMenu(){
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
