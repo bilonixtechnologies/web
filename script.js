@@ -42,3 +42,51 @@ window.addEventListener("scroll", () => {
     }
 
 });
+// Animated Counters
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+const counter = entry.target;
+const target = +counter.dataset.target;
+
+let count = 0;
+
+const speed = target / 100;
+
+const updateCounter = () =>{
+
+count += speed;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count);
+
+requestAnimationFrame(updateCounter);
+
+}else{
+
+counter.innerText = target + "+";
+
+}
+
+};
+
+updateCounter();
+
+counterObserver.unobserve(counter);
+
+}
+
+});
+
+},{threshold:0.5});
+
+counters.forEach(counter=>{
+counterObserver.observe(counter);
+});
