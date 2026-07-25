@@ -153,3 +153,58 @@ font-size:17px;
 }
 
 }
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#FFD54F;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav a{
+color:#FFD54F;
+text-decoration:none;
+font-weight:600;
+}
+
+.menu-toggle{
+display:none;
+font-size:30px;
+color:#FFD54F;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav ul{
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#111;
+padding:25px;
+flex-direction:column;
+text-align:center;
+}
+
+nav ul.active{
+display:flex;
+}
+}
