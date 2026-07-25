@@ -423,3 +423,41 @@ body::after{
         font-size:16px;
     }
 }
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#FFD54F;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav ul{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,.96);
+    backdrop-filter:blur(15px);
+
+    display:none;
+    flex-direction:column;
+    text-align:center;
+    padding:25px 0;
+    gap:25px;
+}
+
+nav ul.active{
+    display:flex;
+}
+        }
