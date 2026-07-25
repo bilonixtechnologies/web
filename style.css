@@ -126,49 +126,53 @@ nav a:hover {
 
     .logo {
         font-size: 24px;
-      .services{
-padding:120px 8%;
-text-align:center;
+    }
+
+}
+
+.services{
+    padding:120px 8%;
+    text-align:center;
 }
 
 .services h2{
-font-size:42px;
-color:#FFD54F;
-margin-bottom:60px;
+    font-size:42px;
+    color:#FFD54F;
+    margin-bottom:60px;
 }
 
 .service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,213,79,.25);
-border-radius:20px;
-padding:35px;
-backdrop-filter:blur(15px);
-transition:.35s;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,213,79,.25);
+    border-radius:20px;
+    padding:35px;
+    backdrop-filter:blur(15px);
+    transition:.35s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 30px rgba(255,213,79,.35);
-border-color:#FFD54F;
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,213,79,.35);
+    border-color:#FFD54F;
 }
 
 .card h3{
-color:#FFD54F;
-margin-bottom:20px;
-font-size:24px;
+    color:#FFD54F;
+    margin-bottom:20px;
+    font-size:24px;
 }
 
 .card p{
-color:#d5d5d5;
-line-height:1.8;
-font-size:16px;
-  }
-    }
+    color:#d5d5d5;
+    line-height:1.8;
+    font-size:16px;
+}
+       }
 
 }
