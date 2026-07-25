@@ -1,53 +1,44 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
+// Mobile Menu
 
-        const target = document.querySelector(this.getAttribute("href"));
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
 
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
-});
+menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
 
-// Fade-in animation on scroll
-const cards = document.querySelectorAll(".card");
+    const icon = menu.querySelector("i");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, {
-    threshold: 0.2
-});
-
-cards.forEach(card => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-    card.style.transition = "all 0.6s ease";
-    observer.observe(card);
-});
-
-// Change header background while scrolling
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-
-    if (window.scrollY > 50) {
-        header.style.background = "rgba(5,15,30,0.98)";
+    if (nav.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
     } else {
-        header.style.background = "rgba(8,17,31,.95)";
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
     }
 });
-// Mobile menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+// Close menu after clicking a link
+
+document.querySelectorAll("#nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+
+        const icon = menu.querySelector("i");
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    });
+});
+
+// Header shadow on scroll
+
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 30) {
+        header.style.background = "rgba(0,0,0,0.75)";
+    } else {
+        header.style.background = "rgba(0,0,0,0.25)";
+    }
+
 });
