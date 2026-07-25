@@ -31,7 +31,7 @@ header{
 
 nav{
     display:flex;
-    gap:35px;
+    gap:15px;
 }
 
 nav a{
@@ -52,7 +52,7 @@ header{
 }
 
 .logo{
-    font-size:2rem;
+    font-size:1.6rem;
 }
 
 nav{
