@@ -575,17 +575,18 @@ nav ul.active{
 }
 
 .process-card{
-    width:250px;
+    width:260px;
     padding:30px;
-    border-radius:15px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,215,0,.3);
-    transition:.4s;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,215,0,0.4);
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,215,0,0.15);
+    transition:all .4s ease;
 }
 
 .process-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(255,215,0,.4);
+    box-shadow:0 0 35px rgba(255,215,0,0.45);
 }
 
 .process-card span{
