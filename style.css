@@ -125,25 +125,31 @@ nav{
     box-shadow:0 0 45px rgba(245,197,66,.6);
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-    .hero h1 {
-        font-size: 42px;
-    }
+header{
+    padding:16px 20px;
+}
 
-    .subtitle {
-        font-size: 17px;
-    }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    nav ul {
-        gap: 18px;
-        font-size: 14px;
-    }
+.logo{
+    font-size:1.6rem;
+}
 
-    .logo {
-        font-size: 24px;
-    }
+nav ul{
+    display:flex;
+    gap:15px;
+    list-style:none;
+}
 
+nav ul li a{
+    font-size:14px;
+}
 }
 
 .services{
