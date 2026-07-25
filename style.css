@@ -232,3 +232,37 @@ font-size:16px;
 margin:0;
 color:#ddd;
     }
+/* FUTURISTIC BACKGROUND GLOW */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(255,213,79,0.18), transparent 70%);
+    top:20%;
+    left:-150px;
+    z-index:-1;
+    animation:floatGlow 8s infinite alternate;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(255,213,79,0.12), transparent 70%);
+    bottom:10%;
+    right:-150px;
+    z-index:-1;
+    animation:floatGlow 10s infinite alternate-reverse;
+}
+
+@keyframes floatGlow{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(60px);
+    }
+    }
