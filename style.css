@@ -199,28 +199,7 @@ nav ul li a{
 
 
 .about{
-padding:120px 8%;
-display:flex;
-justify-content:center;
-}
 
-.about-text{
-max-width:1000px;
-text-align:center;
-}
-
-.about h2{
-font-size:42px;
-color:#FFD54F;
-margin-bottom:30px;
-}
-
-.about p{
-font-size:18px;
-line-height:1.9;
-color:#d8d8d8;
-margin-bottom:50px;
-}
 
 .features{
 display:grid;
