@@ -265,4 +265,39 @@ body::after{
     to{
         transform:translateY(60px);
     }
+    .contact{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    color:#FFD54F;
+    margin-bottom:30px;
+}
+
+.contact p{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.contact-box{
+    margin-top:40px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,213,79,.25);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(15px);
+    display:inline-block;
+}
+
+.contact-box:hover{
+    box-shadow:0 0 30px rgba(255,213,79,.35);
+    border-color:#FFD54F;
+}
+
+.contact .btn{
+    margin-top:25px;
     }
+
