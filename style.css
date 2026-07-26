@@ -544,60 +544,80 @@ color:#FFD700;
 margin-bottom:8px;
 }
 
-/* Contact */
-
+/* Contact Section */
 .contact{
-padding:120px 8%;
+    padding:100px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .contact-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:start;
+    width:100%;
+    max-width:600px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,204,0,0.3);
+    border-radius:20px;
+    padding:40px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 30px rgba(255,204,0,.2);
 }
 
-.contact-info h3{
-font-size:2rem;
-color:#FFD700;
-margin-bottom:20px;
+.contact h2{
+    font-size:2.5rem;
+    text-align:center;
+    color:#ffcc00;
+    margin-bottom:30px;
 }
 
-.contact-info p{
-margin:18px 0;
-color:#ddd;
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:2px solid rgba(255,204,0,.3);
+    border-radius:12px;
+    background:#111;
+    color:#fff;
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
 }
 
-.contact-info i{
-color:#FFD700;
-margin-right:10px;
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color:#999;
 }
 
-.contact-form{
-display:flex;
-flex-direction:column;
-gap:20px;
+.contact input:focus,
+.contact textarea:focus{
+    border-color:#ffcc00;
+    box-shadow:0 0 15px rgba(255,204,0,.5);
 }
 
-.contact-form input,
-.contact-form textarea{
-padding:16px;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,215,0,.2);
-border-radius:12px;
-color:#fff;
-font-size:1rem;
+.contact textarea{
+    min-height:160px;
+    resize:vertical;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
-outline:none;
-border-color:#FFD700;
+.contact button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#ffcc00;
+    color:#000;
+    font-size:1.1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
 }
 
-.contact-form textarea{
-resize:none;
-}
+.contact button:hover{
+    background:#ffd633;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(255,204,0,.6);
+  }
 
 /* Footer */
 
